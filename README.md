@@ -4,7 +4,6 @@ A word-level neural language model built entirely in NumPy, with no deep learnin
 
 This was heavily inspired by Andrej Karpathy's `makemore` from the *Neural Networks: Zero to Hero* series, but extended to the word level with a class-based architecture.
 
----
 
 ## What's Implemented
 
@@ -23,7 +22,6 @@ This was heavily inspired by Andrej Karpathy's `makemore` from the *Neural Netwo
 **Dataset:**
 - Tiny Shakespeare, word-level context windows (context size = 4), 80/10/10 split with shuffled sentences
 
----
 
 ## Models Trained
 
@@ -36,7 +34,6 @@ This was heavily inspired by Andrej Karpathy's `makemore` from the *Neural Netwo
 
 LR1 and LR2 are the learning rates during the first and second half of iterations during training.
 
----
 
 ## Key Takeaways
 
@@ -51,7 +48,6 @@ LR1 and LR2 are the learning rates during the first and second half of iteration
 
 There was really no clear answer here. Model 2 had the lowest dev loss but also the most overfitting. Model 3's numbers are essentially meaningless due to a learning rate typo that tanked the second half of training. Qualitative evaluation isn't much cleaner: the generated samples across all four models look similar enough that calling a winner from a few sentences is more gut feeling than analysis. Even outsourcing to an LLM evaluator gave me inconsistent results. My best answer is that Model 4 is probably best, with a lot of emphasis on "probably."
 
----
 
 ## Running
 
